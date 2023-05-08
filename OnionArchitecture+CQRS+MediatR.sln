@@ -3,9 +3,56 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{81DD1E35-3D3B-4E33-B0B6-CDBE240DD29F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{444579BA-AB41-470F-922C-F6E4AE7AB026}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture+CQRS+MediatR.Domain", "src\Core\OnionArchitecture+CQRS+MediatR.Domain\OnionArchitecture+CQRS+MediatR.Domain.csproj", "{61E0EEED-253D-437D-92F4-3BE3B9889EFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture+CQRS+MediatR.Application", "src\Core\OnionArchitecture+CQRS+MediatR.Application\OnionArchitecture+CQRS+MediatR.Application.csproj", "{C80EF6E0-5E3C-49E0-BD9F-EE215B46DB3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infastructure", "Infastructure", "{607E82D3-8B1D-48A8-9200-9E14ED64FDD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture+CQRS+MediatR.Persistance", "src\Infrastructure\OnionArchitecture+CQRS+MediatR.Persistance\OnionArchitecture+CQRS+MediatR.Persistance.csproj", "{40926D1B-C95D-4623-B58A-28FE9CAA92FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPI", "WebAPI", "{0093B89E-7D27-4F64-B492-15755C990BC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture+CQRS+MediatR.WebAPI", "src\WbAPI\OnionArchitecture+CQRS+MediatR.WebAPI\OnionArchitecture+CQRS+MediatR.WebAPI.csproj", "{E79FF6D0-93E3-4682-900E-17178F5ED432}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61E0EEED-253D-437D-92F4-3BE3B9889EFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61E0EEED-253D-437D-92F4-3BE3B9889EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61E0EEED-253D-437D-92F4-3BE3B9889EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61E0EEED-253D-437D-92F4-3BE3B9889EFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C80EF6E0-5E3C-49E0-BD9F-EE215B46DB3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C80EF6E0-5E3C-49E0-BD9F-EE215B46DB3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C80EF6E0-5E3C-49E0-BD9F-EE215B46DB3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C80EF6E0-5E3C-49E0-BD9F-EE215B46DB3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40926D1B-C95D-4623-B58A-28FE9CAA92FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40926D1B-C95D-4623-B58A-28FE9CAA92FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40926D1B-C95D-4623-B58A-28FE9CAA92FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40926D1B-C95D-4623-B58A-28FE9CAA92FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E79FF6D0-93E3-4682-900E-17178F5ED432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E79FF6D0-93E3-4682-900E-17178F5ED432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E79FF6D0-93E3-4682-900E-17178F5ED432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E79FF6D0-93E3-4682-900E-17178F5ED432}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{444579BA-AB41-470F-922C-F6E4AE7AB026} = {81DD1E35-3D3B-4E33-B0B6-CDBE240DD29F}
+		{61E0EEED-253D-437D-92F4-3BE3B9889EFB} = {444579BA-AB41-470F-922C-F6E4AE7AB026}
+		{C80EF6E0-5E3C-49E0-BD9F-EE215B46DB3E} = {444579BA-AB41-470F-922C-F6E4AE7AB026}
+		{607E82D3-8B1D-48A8-9200-9E14ED64FDD7} = {81DD1E35-3D3B-4E33-B0B6-CDBE240DD29F}
+		{40926D1B-C95D-4623-B58A-28FE9CAA92FE} = {607E82D3-8B1D-48A8-9200-9E14ED64FDD7}
+		{0093B89E-7D27-4F64-B492-15755C990BC8} = {81DD1E35-3D3B-4E33-B0B6-CDBE240DD29F}
+		{E79FF6D0-93E3-4682-900E-17178F5ED432} = {0093B89E-7D27-4F64-B492-15755C990BC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EE954789-B4FD-40FB-8B40-1D552A9E2E6B}
